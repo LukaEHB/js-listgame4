@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="../jquery-3.6.0.min.js"></script>
+  <script src="./script.js" type="module" defer></script>
+  <script defer>
+    $(document).ready(function() {
+      // $(".left-list li").addClass("greenbefore");
+      // $(".right-list li").addClass("redbefore");
+    });
+  </script>
+  <style>
+    .right-list .locked{
+      background-color:  #d2473d;
+    }
+    .left-list .locked{
+      background-color:  #0b8f94;
+    }
+    div p.locked{
+      background-image: none;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Triple Time</h1>
+  <section>
+    <div class="js-gameNumber gameNumber">20</div>
+    <!-- left -->
+    <div class="js-container list left-list">
+      <h2>Left side</h2>
+      <ol class="js-list">
+      
+      </ol>
+      <p class="js-footer">Total: <span class="js-total total">0</span></p>
+    </div>
+    <!-- right -->
+    <div class="js-container list right-list">
+      <h2>Right side</h2>
+      <ol class="js-list">
+     
+      </ol>
+      <p class="js-footer">Total: <span class="js-total total">0</span></p>
+    </div>
+  </section>
+  
+</body>
+</html>
